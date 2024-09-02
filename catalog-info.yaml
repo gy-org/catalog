@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: catalog
+  annotations:
+    github.com/project-slug: gy-org/catalog
+    backstage.io/kubernetes-label-selector: 'app=catalog'
+  description: catalog created
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
+  # dependsOn:
+  #   - crossplane-eks-demo-05
