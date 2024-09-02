@@ -10,5 +10,6 @@ spec:
   type: service
   owner: user:guest
   lifecycle: experimental
-  # dependsOn:
-  #   - crossplane-eks-demo-05
+  dependsOn:
+    - component:catalog-mysql
+    - resource:rossplane-eks-demo-05
