@@ -43,6 +43,7 @@ kind: Deployment
 metadata:
   name: ${APP_NAME}
   labels:
+    app: ${APP_NAME}
     helm.sh/chart: catalog-0.0.1
     app.kubernetes.io/name: ${APP_NAME}
     app.kubernetes.io/instance: ${APP_NAME}
